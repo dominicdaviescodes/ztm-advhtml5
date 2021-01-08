@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Advanced HTML 5 | ZTM</title>
+</head>
+
+<body>
+  <h1>ZTM Advanced HTML 5</h1>
+  <h2>HTML Forms</h2>
+  <p>We need to add a name attribute to form elements so that when the form is submitted the data can be matched to the
+    name. for multiple options where the name is the same you must add value attribute.</p>
+  <p>When we submit the form in our test example the data is sent to the url as a query string using the GET method.We
+    would normally use POST method and data would be sent securely.</p>
+  <h4>The query string with mistakes</h4>
+  <p>?firstName=dom&lastName=ztm&email=test%40ztm.com&password=password&birthday=1975-01-01&gender=on&cat=on</p>
+  <h4>The query string with fixes</h4>
+  <p>firstName=Dom&lastName=ztm&email=test%40ztm.com&password=pass1234&birthday=1975-01-01&gender=male&dog=on&cars=audi</p>
+  <form>
+    First Name: <input type="text" name="firstName"> <br>
+    Last Name: <input type="text" name="lastName"> <br>
+    Email: <input type="email" required name="email"> <br>
+    Password: <input type="password" minlength="5" name="password"> <br>
+    Birthday: <input type="date" name="birthday"> <br>
+    Gender: <br>
+    <input type="radio" name="gender" value="male">Male <br>
+    <input type="radio" name="gender" value="femail">Female <br>
+    <input type="radio" name="gender" value="other">Other <br>
+    Pets: <br>
+    <input type="checkbox" name="cat"> Cat <br>
+    <input type="checkbox" name="dog"> Dog <br>
+    Cars: <br>
+    <select name="cars">
+      <option value="volvo">Volvo</option>
+      <option value="audi">Audi</option>
+    </select> <br>
+    <input type="submit" value="Register!">
+    <input type="reset">
+  </form>
+</body>
+
+</html>
